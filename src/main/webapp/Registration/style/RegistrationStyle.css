@@ -1,0 +1,127 @@
+body{
+    width: auto;
+    min-width: 310px;   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.backgroundVideo{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.mainContent{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+div{
+    align-items: center;
+}
+.inputsField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputsField span{
+    color: white;
+    font-size: 14px;
+}
+
+.RegistrationInputDiv{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+}
+
+.RegistrationInputDiv input{
+    display: block;
+}
+.inputDiv * {
+    padding: 5px 0;
+}
+
+.input{
+    border-radius: 10px;
+    padding: 7px 5px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.passwordInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.registrationDiv{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.registrationDiv input{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.notificationDiv{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+.notificationDiv p {
+    color: rgb(158, 158, 158);
+}
+
+.RegistrationInputDiv input:focus::placeholder{
+    color: transparent;
+}
+
+.RegistrationInputDiv{
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.passwordInputs p {
+    color: red;
+    padding-top: 5px;
+    font-size: 10px;
+}
+
+.passwordConfirmDiv{
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+}
+.RegistrationInputDiv input{
+    background-color:rgba(77, 77, 77, 0.5);
+    color: rgb(21, 124, 0);
+}
+
+video {
+    pointer-events: none;
+}

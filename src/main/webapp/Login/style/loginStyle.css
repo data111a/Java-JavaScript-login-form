@@ -1,0 +1,113 @@
+body{
+    min-width: 310px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.backgroundVideo{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+}
+
+.LoginInputDiv span{
+    color: white;
+    font-size: 14px;
+}
+
+.LoginInputDiv input{
+    background-color:rgba(77, 77, 77, 0.5);
+}
+
+.LoginInputDiv input:focus::placeholder{
+    color: transparent;
+}
+
+.mainContent{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+div{
+    align-items: center;
+}
+.inputsField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LoginInputDiv{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.inputDiv * {
+    padding: 5px 0;
+}
+
+.input{
+    border-radius: 10px;
+    padding: 7px 5px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.checkMarkDiv{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;  
+    margin-top: 10px;  
+}
+
+.checkMarkDiv input {
+    margin-right: 5px;
+}
+
+.loginDiv{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.loginDiv input{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.notificationDiv{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+.notificationDiv p {
+    color: rgb(150, 150, 150);
+}
+
+.checkMarkDiv label{
+    color: white;
+}
+
+
+video {
+    pointer-events: none;
+}
