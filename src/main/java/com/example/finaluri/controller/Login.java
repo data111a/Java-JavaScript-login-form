@@ -21,17 +21,18 @@ public class Login extends HttpServlet {
         SQLConnection con = new SQLConnection();
         userDatabase db =  new userDatabase(con);
         User user = db.login(mail,password);
+        System.out.println("data");
         String error = "incorrect username or password";
         if(user!=null) {
             req.setAttribute("username", user.getUserName());
             req.setAttribute("userName", user.getName());
             req.setAttribute("surname", user.getSurName());
             System.out.println(user.getUserName());
-            getServletContext().getRequestDispatcher("/welcome.jsp").forward(req, resp);
+            getServletContext().getRequestDispatcher("../../../../../webapp/Welcome/html/index.jsp").forward(req, resp);
 //        }
         }else{
             req.setAttribute("error",error);
-            getServletContext().getRequestDispatcher("/index.jsp").forward(req, resp);
+            getServletContext().getRequestDispatcher("../../../../../webapp/Login/html/Login.jsp").forward(req, resp);
         }
 
 
